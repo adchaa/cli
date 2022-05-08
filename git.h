@@ -18,15 +18,15 @@ void runcommit(char *args[], int n)
         }
         else
         {
-            sprintf(str, "git commit -m %s", args[1]);
+            sprintf(str, "git commit -m \"%s\"", args[1]);
         }
     }
     else
     {
         puts("add and commit");
-        puts(args[0]);
         system("git add .");
-        sprintf(str, "git commit -m %s", args[0]);
+        sprintf(str, "git commit -m \"%s\"", args[0]);
+        puts(str);
         system(str);
     }
 }
