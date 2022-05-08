@@ -46,4 +46,12 @@ int main(int argc, char *argv[])
     {
         runc(argv + 2, argc);
     }
+    else if (strcmp(name, "py") == 0)
+    {
+        runpython(argv + 2, argc);
+    }
+    else
+    {
+        puts("this command doesn't exist");
+    }
 }

@@ -1,14 +1,3 @@
-int find(char **t, char *str, int n)
-{
-    for (int i = 0; i < n; i++)
-    {
-        if (strcmp(str, t[i]) == 0)
-        {
-            return i;
-        }
-    }
-    return -1;
-}
 
 resulat execute(char *command, bool WithPrint)
 {

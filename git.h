@@ -24,6 +24,7 @@ void runcommit(char *args[], int n)
     else
     {
         puts("add and commit");
+        puts(args[0]);
         system("git add .");
         sprintf(str, "git commit -m %s", args[0]);
         system(str);
