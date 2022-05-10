@@ -15,10 +15,9 @@ typedef struct
 #include "utils.h"
 #include "react.h"
 #include "compilers.h"
-
 void runhelp()
 {
-    puts("\033[0;32mreact create <name> : \033[0;37mto create react app\n\033[0;32mreact start: \033[0;37mto start react app\n\033[0;32mcommit <message>: \033[0;37mto add and commit files (git)\n\033[0;32mcommit -a <message> : \033[0;37monly commit");
+    puts("\033[0;32mreact create <name> : \033[0;37m create react app\n\033[0;32mreact start: \033[0;37mto start react app\n\033[0;32mcommit <message>: \033[0;37mto add and commit files (git)\n\033[0;32mcommit -a <message> : \033[0;37monly commit\n\033[0;32mcli c <file>: \033[0;37mcompile and run the c file if leave the file empty then will compile all the c file in the directory and run them ");
 }
 
 int main(int argc, char *argv[])
